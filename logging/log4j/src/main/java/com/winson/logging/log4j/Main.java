@@ -6,14 +6,9 @@ import org.apache.logging.log4j.Logger;
 
 public class Main {
     private static Logger logger = LogManager.getLogger();
-    public static void main(String[] args) {
-        logger.trace("trace");
-        logger.debug("debug");
-        logger.info("debug");
-        logger.warn("warn");
-        logger.error("error");
-        logger.fatal("fatal");
 
+    public static void main(String[] args) {
+        Util.log(logger);
         HelloService service = new HelloService();
         service.sayHello("Winson");
     }
