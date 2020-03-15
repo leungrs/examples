@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration status="error" strict="true">
+  <!--配置properties-->
+  <properties>
+    <property name="aaa">Hello.txt</property>
+    <property name="bbb" value="Steven Jobs"/>
+  </properties>
+  <!--配置filter-->
+  <!--配置appenders-->
+  <appenders>
+    <!--精简风格的配置-->
+    <console name="XXXX">
+      <patternlayout pattern="%C{1}:%m%n"/>
+    </console>
+    <!--严格风格下配置-->
+    <appender type="Console" name="YYYY">
+      <Layout type="PatternLayout" pattern="++++++%m%n"/>
+    </appender>
+    <appender name="ZZZZ" type="console">
+      <patternlayout pattern="========%m%n"/>
+    </appender>
+  </appenders>
+
+  <!--配置logger-->
+  <loggers>
+    <logger name="com.winson.logging.log4j.HelloService"
+            level="fatal"/>
+    <root level="trace">
+      <appenderref ref="ZZZZ"/>
+    </root>
+  </loggers>
+
+</configuration>

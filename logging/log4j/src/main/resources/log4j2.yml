@@ -1,0 +1,19 @@
+status: error
+properties:
+  property:
+    -
+      name: aaa
+      value: hello.txt
+    -
+      name: bbb
+      value: Steven Jobs
+appenders:
+  Console:
+    name: XXXX
+    PatternLayout:
+      pattern: "%m%n"
+loggers:
+  root:
+    level: debug
+    AppenderRef:
+      ref: XXXX

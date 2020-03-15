@@ -1,0 +1,23 @@
+{
+  "configuration": {
+    "status": "trace",
+    "properties": {
+      "property": {"name": "aaa", "value": "hello.txt"},
+      "property": {"name": "bbb", "value": "Steven Jobs"}
+    },
+    "appenders": {
+      "Console": {
+        "name": "XXXX",
+        "PatternLayout": {
+          "pattern": "****%C{1}*******%m%n"
+        }
+      }
+    },
+    "loggers": {
+      "root": {
+        "level": "warn",
+        "appenderRef": {"ref": "XXXX"}
+      }
+    }
+  }
+}
