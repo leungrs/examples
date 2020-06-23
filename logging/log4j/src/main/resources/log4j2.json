@@ -9,7 +9,7 @@
       "Console": {
         "name": "XXXX",
         "PatternLayout": {
-          "pattern": "****%C{1}*******%m%n"
+          "pattern": "****%c{1}*******%m%n"
         }
       }
     },

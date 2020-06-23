@@ -10,7 +10,7 @@
   <appenders>
     <!--精简风格的配置-->
     <console name="XXXX">
-      <patternlayout pattern="%C{1}:%m%n"/>
+      <patternlayout pattern="%c--%p--:%m%n"/>
     </console>
     <!--严格风格下配置-->
     <appender type="Console" name="YYYY">
@@ -26,7 +26,7 @@
     <logger name="com.winson.logging.log4j.HelloService"
             level="fatal"/>
     <root level="trace">
-      <appenderref ref="ZZZZ"/>
+      <appenderref ref="XXXX"/>
     </root>
   </loggers>
 
